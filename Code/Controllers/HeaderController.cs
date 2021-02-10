@@ -62,6 +62,9 @@ namespace Linde.Feature.BasicContent.Controllers
                 //var source = mvcContext.GetContextItem<HeaderBuilder>();
                 var source = mvcContext.GetDataSourceItem<HeaderViewModel>();
 
+                var logger = log4net.LogManager.GetLogger("Sitecore.Diagnostics.Custom");
+                logger.Info("Sample Logging description info");
+
                 return View(source);
 
             }
