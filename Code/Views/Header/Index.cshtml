@@ -1,0 +1,13 @@
+﻿@*@Model.TheDate*@
+@*@using Glass.Mapper.Sc.Web.Mvc*@
+@using Sitecore.Mvc
+
+<div class="content">
+    <p class="image-wrapper">
+        @Html.Sitecore().Field("HeaderImage")
+    </p>
+    <h2>@Html.Sitecore().Field("HeaderTitle")</h2>
+    <p class="body">
+        @Html.Sitecore().Field("HeaderBody")
+    </p>
+</div>

@@ -1,0 +1,21 @@
+﻿@*@model Sitecore.Mvc.Presentation.RenderingModel*@
+
+
+@using Glass.Mapper.Sc.Web.Mvc
+@model Linde.Feature.BasicContent.ViewModels.HeaderViewModel
+
+<h2>New Controller Renderred Header</h2>
+<p>@Model.HeaderTitle</p>
+
+@Html.Raw(@Model.HeaderBody)
+
+<img src="@Model.HeaderImage.Src" width="200" />
+@*@Html.Glass().RenderImage(Model.HeaderImage)*@
+
+    
+    @*<img src="@Model._headerBuilder.Image.ImageUrl" width="500" />*@
+
+
+
+
+
